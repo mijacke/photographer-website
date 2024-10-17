@@ -1,0 +1,64 @@
+/* Use Cormorant font for navigation and home screen text */
+.cormorant {
+    font-family: 'Cormorant', serif;
+}
+
+/* Full-screen background image */
+.full-screen {
+    background-image: url('../img/svatobna_background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+}
+
+/* Main heading: Fotenie je poézia */
+.full-screen h1 {
+    font-size: 4rem;
+    font-weight: 700; /* Bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Subheading: KRÁSA OKAMIHU */
+.full-screen .subheading {
+    font-size: 1rem;
+    font-weight: 700; /* Bold */
+    text-transform: uppercase; /* All caps */
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Centered text section styling */
+#description {
+    font-family: 'Cormorant', serif;
+    margin-top: 40px;
+}
+
+.description-title {
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold */
+}
+
+.description-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 800px; /* To limit the text width */
+    margin: 0 auto; /* Center the text block */
+}
+
+/* Custom navbar */
+.navbar-custom {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;  /* Apply the Cormorant font to the navbar */
+}
+
