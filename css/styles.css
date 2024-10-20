@@ -4,8 +4,7 @@
 }
 
 /* Full-screen background image */
-.full-screen {
-    background-image: url('../img/svadobna_background.jpg'); /* Path to your background image */
+.background-section {
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -17,6 +16,15 @@
     text-align: center;
     font-family: 'Cormorant', serif;
 }
+
+#about-me {
+    background-image: url('../img/sezonna.jpg');
+}
+
+.full-screen {
+    background-image: url('../img/svadobna_background.jpg');
+}
+
 
 /* Main heading: Fotenie je poézia */
 .full-screen h1 {
@@ -108,23 +116,6 @@ p.description-text {
     width: 25%;
     margin: 40px auto; /* Centered horizontally */
 }
-
-/* Full-screen background for About Me page */
-#about-me {
-    background-image: url('../img/sezonna.jpg'); /* Cesta k pozadiu */
-    background-color: #333; /* Záložná farba, ak sa obrázok nenájde */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    font-family: 'Cormorant', serif;
-}
-
 
 /* WORK SECTION */
 #see-my-work {
