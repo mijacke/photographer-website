@@ -18,13 +18,33 @@
 }
 
 #about-me {
-    background-image: url('../img/sezonna.jpg');
+    background-image: url('../img/aboutMeBackground.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 75vh;
+}
+
+.lead {
+    font-family: 'Cormorant', serif;
+}
+
+.about-me-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.img-fluid {
+    max-height: 80vh;
+    width: 100%;
+    object-fit: cover; /* Obrázok sa prispôsobí kontajneru */
+    object-position: bottom; /* Spodná časť obrázka bude zachovaná, oreže sa vrchná časť */
 }
 
 .full-screen {
     background-image: url('../img/svadobna_background.jpg');
 }
-
 
 /* Main heading: Fotenie je poézia */
 .full-screen h1 {
