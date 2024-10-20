@@ -65,8 +65,6 @@ p.description-text {
     margin-bottom: 25px; /* Added spacing between paragraphs */
 }
 
-
-
 /* Custom navbar */
 .navbar-custom {
     position: absolute;
@@ -75,6 +73,23 @@ p.description-text {
     z-index: 10;
     text-transform: uppercase;
     font-family: 'Cormorant', serif;  /* Apply the Cormorant font to the navbar */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 300;
+}
+
+/* On hover, change color */
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Special style for Home in the center */
+.home-link {
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 .navbar-nav {
@@ -87,23 +102,6 @@ p.description-text {
     margin: 0 20px;
 }
 
-.nav-link {
-    font-size: 1.2rem;
-    color: black;
-    font-weight: 300;
-}
-
-/* Special style for Home in the center */
-.home-link {
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-/* On hover, change color */
-.nav-link:hover {
-    text-decoration: underline;
-}
-
 /* HORIZONTAL Line Styling - quarter width and centered */
 .divider {
     border-top: 1px solid #999;
@@ -111,8 +109,22 @@ p.description-text {
     margin: 40px auto; /* Centered horizontally */
 }
 
+/* Full-screen background for About Me page */
+#about-me {
+    background-image: url('../img/sezonna.jpg'); /* Cesta k pozadiu */
+    background-color: #333; /* Záložná farba, ak sa obrázok nenájde */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+}
 
-/* WORK SECTION */
 
 /* WORK SECTION */
 #see-my-work {
