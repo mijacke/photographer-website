@@ -1,6 +1,70 @@
-/* Use Cormorant font for navigation and home screen text */
 .cormorant {
     font-family: 'Cormorant', serif;
+}
+
+/* Portfolio section */
+#portfolio {
+    background-image: url('../img/portfolioBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh; /* Zmenšená výška na 75% výšky obrazovky */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+}
+
+/* Nadpisy na pozadí */
+#portfolio h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#portfolio .subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Flexbox container pre zarovnanie obrázkov */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.col-md-6.d-flex.flex-column .portfolio-item {
+    flex: 1; /* Obidva obrázky naľavo budú zdieľať rovnakú výšku */
+}
+
+.tall-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.portfolio-item p {
+    font-family: 'Cardo', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+}
+
+/* Footer styling */
+#footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 /* Full-screen background image */
@@ -24,10 +88,6 @@
     height: 75vh;
 }
 
-.lead {
-    font-family: 'Cormorant', serif;
-}
-
 .about-me-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -38,22 +98,20 @@
 .img-fluid {
     max-height: 80vh;
     width: 100%;
-    object-fit: cover; /* Obrázok sa prispôsobí kontajneru */
-    object-position: bottom; /* Spodná časť obrázka bude zachovaná, oreže sa vrchná časť */
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .full-screen {
     background-image: url('../img/svadobna_background.jpg');
 }
 
-/* Main heading: Fotenie je poézia */
 .full-screen h1 {
     font-size: 4rem;
     font-weight: 700; /* Bold */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Subheading: KRÁSA OKAMIHU */
 .full-screen .subheading {
     font-size: 1rem;
     font-weight: 700; /* Bold */
@@ -62,35 +120,34 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Centered text section styling */
 #description {
     font-family: 'Cormorant', serif;
-    margin-top: 60px; /* Added more top margin for better spacing */
-    max-width: 800px; /* Ensures the text doesn't stretch too wide */
-    margin-left: auto; /* Center the description section */
+    margin-top: 60px;
+    max-width: 800px;
+    margin-left: auto;
     margin-right: auto;
 }
 
 .description-title {
     font-size: 2.5rem;
-    font-weight: 700; /* Bold */
-    text-align: center; /* Center the title */
-    margin-bottom: 40px; /* Added more space below the title */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .description-text {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin: 0 auto; /* Center the text block */
+    margin: 0 auto;
 }
 
 /* Different font for paragraph text */
 p.description-text {
     font-family: 'Cardo', serif;
     font-size: 1rem;
-    text-align: left; /* Left-align the paragraphs */
+    text-align: left;
     line-height: 1.7;
-    margin-bottom: 25px; /* Added spacing between paragraphs */
+    margin-bottom: 25px;
 }
 
 /* Custom navbar */
@@ -100,7 +157,7 @@ p.description-text {
     width: 100%;
     z-index: 10;
     text-transform: uppercase;
-    font-family: 'Cormorant', serif;  /* Apply the Cormorant font to the navbar */
+    font-family: 'Cormorant', serif;
 }
 
 .nav-link {
@@ -130,11 +187,11 @@ p.description-text {
     margin: 0 20px;
 }
 
-/* HORIZONTAL Line Styling - quarter width and centered */
+/* HORIZONTAL Line Styling */
 .divider {
     border-top: 1px solid #999;
     width: 25%;
-    margin: 40px auto; /* Centered horizontally */
+    margin: 40px auto;
 }
 
 /* WORK SECTION */
@@ -162,13 +219,13 @@ p.description-text {
     position: relative;
     z-index: 2;
     font-size: 1.5rem;
-    max-width: 400px; /* Ensure max width for the work items */
+    max-width: 400px;
 }
 
 /* Centering images properly */
 .work-item img {
-    width: 100%; /* Ensure the image takes full width */
-    height: auto; /* Keep aspect ratio */
+    width: 100%;
+    height: auto;
     max-height: calc(100vw * 9 / 16); /* Ensure max height in 16:9 ratio */
     object-fit: cover; /* Maintain aspect ratio, crop if needed */
     object-position: center;
@@ -191,24 +248,23 @@ p.description-text {
     z-index: 1;
 }
 
-
 /* QUOTE SECTION */
 .quote-section {
-    padding: 200px 20px; /* Adjust padding if needed */
-    background-color: transparent; /* No background */
-    color: black; /* Black text for better visibility */
+    padding: 200px 20px;
+    background-color: transparent;
+    color: black;
     text-align: center;
 }
 
 /* Quote Header - Half the size */
 .quote-text h3 {
-    font-size: 1.8rem; /* Half of 1.8rem */
+    font-size: 1.8rem;
     font-weight: 400;
-    text-shadow: none; /* Remove the text-shadow */
+    text-shadow: none;
 }
 
 .quote-text p {
-    font-size: 1.2rem; /* Half of 1.2rem */
+    font-size: 1.2rem;
     font-style: italic;
     margin-top: 10px;
 }
