@@ -5,7 +5,7 @@
 
 /* Full-screen background image */
 .full-screen {
-    background-image: url('../img/svatobna_background.jpg'); /* Path to your background image */
+    background-image: url('../img/svadobna_background.jpg'); /* Path to your background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -37,20 +37,35 @@
 /* Centered text section styling */
 #description {
     font-family: 'Cormorant', serif;
-    margin-top: 40px;
+    margin-top: 60px; /* Added more top margin for better spacing */
+    max-width: 800px; /* Ensures the text doesn't stretch too wide */
+    margin-left: auto; /* Center the description section */
+    margin-right: auto;
 }
 
 .description-title {
     font-size: 2.5rem;
     font-weight: 700; /* Bold */
+    text-align: center; /* Center the title */
+    margin-bottom: 40px; /* Added more space below the title */
 }
 
 .description-text {
     font-size: 1.1rem;
     line-height: 1.7;
-    max-width: 800px; /* To limit the text width */
     margin: 0 auto; /* Center the text block */
 }
+
+/* Different font for paragraph text */
+p.description-text {
+    font-family: 'Cardo', serif;
+    font-size: 1rem;
+    text-align: left; /* Left-align the paragraphs */
+    line-height: 1.7;
+    margin-bottom: 25px; /* Added spacing between paragraphs */
+}
+
+
 
 /* Custom navbar */
 .navbar-custom {
@@ -82,44 +97,100 @@
 .home-link {
     font-size: 1.6rem;
     font-weight: 700;
-    color: red;
 }
 
 /* On hover, change color */
 .nav-link:hover {
-    color: #007bff;
     text-decoration: underline;
 }
 
-/* Horizontal Line Styling */
+/* HORIZONTAL Line Styling - quarter width and centered */
 .divider {
     border-top: 1px solid #999;
-    margin: 40px 0;
+    width: 25%;
+    margin: 40px auto; /* Centered horizontally */
 }
 
-/* Quote Section with Background Image */
-.quote-section {
-    background-image: url('../img/svatobna_background.jpg'); /* Path to the background image */
+
+/* WORK SECTION */
+
+/* WORK SECTION */
+#see-my-work {
+    background-image: url('img/svadobna_background.jpg'); /* Default background */
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
+    width: 100vw;
+    height: calc(100vw * 9 / 16); /* Adjust height based on the 16:9 ratio */
+    margin-left: calc(-50vw + 50%);
     color: white;
+    transition: background-image 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow if images extend */
+}
+
+/* Work items (Wedding, Family, Seasonal) */
+.work-item {
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    max-width: 400px; /* Ensure max width for the work items */
+}
+
+/* Centering images properly */
+.work-item img {
+    width: 100%; /* Ensure the image takes full width */
+    height: auto; /* Keep aspect ratio */
+    max-height: calc(100vw * 9 / 16); /* Ensure max height in 16:9 ratio */
+    object-fit: cover; /* Maintain aspect ratio, crop if needed */
+    object-position: center;
+}
+
+/* Umiestnenie textov v strede */
+.row {
+    width: 100%;
+    justify-content: space-around; /* Rovnomerné rozloženie položiek */
+    align-items: center;
+}
+
+.section-title {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* QUOTE SECTION */
+.quote-section {
+    padding: 200px 20px; /* Adjust padding if needed */
+    background-color: transparent; /* No background */
+    color: black; /* Black text for better visibility */
     text-align: center;
 }
 
+/* Quote Header - Half the size */
 .quote-text h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.8rem; /* Half of 1.8rem */
+    font-weight: 400;
+    text-shadow: none; /* Remove the text-shadow */
 }
 
 .quote-text p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Half of 1.2rem */
     font-style: italic;
     margin-top: 10px;
 }
 
-/* Footer Styling */
+/* FOOTER Styling */
 #footer {
     padding: 20px 0;
     background-color: #f8f9fa;
@@ -147,7 +218,7 @@
 }
 
 .back-to-top a {
-    color: #007bff;
+    color: rosybrown;
     text-decoration: none;
 }
 
